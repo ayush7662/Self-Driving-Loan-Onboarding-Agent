@@ -1,6 +1,7 @@
 import React from "react";
 import MessageBubble from "./MessageBubble.jsx";
 import ChatInput from "./ChatInput.jsx";
+import TestDataHelper from "./TestDataHelper.jsx";
 
 function ChatPanel({ messages, onSendMessage, isProcessing }) {
   const messagesEndRef = React.useRef(null);
@@ -13,9 +14,12 @@ function ChatPanel({ messages, onSendMessage, isProcessing }) {
     <div className="chat-panel">
       <div className="chat-header">
         <h2>Loan Agent</h2>
-        <span className={`status-indicator ${isProcessing ? "processing" : ""}`}>
-          {isProcessing ? "Processing..." : "Ready"}
-        </span>
+        <div className="header-right">
+          <TestDataHelper />
+          <span className={`status-indicator ${isProcessing ? "processing" : ""}`}>
+            {isProcessing ? "Processing..." : "Ready"}
+          </span>
+        </div>
       </div>
       
       <div className="messages-container">
