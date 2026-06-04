@@ -2,6 +2,8 @@
 
 A prototype of an AI-powered loan onboarding agent that takes initiative and never hallucinates. Built for the Neenv tech assignment.
 
+### Live  URL: https://self-driving-loan-onboarding-agent.vercel.app/
+
 ## Overview
 
 This prototype demonstrates a split-screen loan onboarding experience:
@@ -59,6 +61,16 @@ npm run dev
 3. Open the URL shown in the terminal (typically `http://localhost:5173`)
 
 ## Test Scenarios
+
+```
+"ABCDE1234F": {
+    fullName: "Ravi Kumar Sharma",
+    dob: "1988-05-14",
+    mobile: "9876543210",
+    gstin: "29ABCDE1234F1Z5",
+    businessName: "Sharma Distributors",
+  },
+```
 
 ### 1. Happy Path (Complete Data)
 - Enter PAN: `ABCDE1234F`
